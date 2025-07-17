@@ -143,17 +143,6 @@ select {
   border: 1px solid var(--blue);
 }
 
-.go-back {
-  height: 15.02890173%;
-  width: 26.16487455%;
-  text-decoration: none;
-  background-color: var(--red);
-  padding: 4px var(--mobile-fs-body-info);
-  color: var(--white);
-  text-align: center;
-  border-radius: 4px;
-}
-
 .add-todo {
   height: 15.02890173%;
   width: 26.16487455%;
