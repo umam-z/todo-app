@@ -160,9 +160,10 @@ select {
 
 /* Done Page */
 
-.go-home {
+.submit-todo {
   display: block;
   height: 15.02890173%;
+  border: none;
   width: 26.16487455%;
   background-color: var(--green);
   text-decoration: none;
@@ -176,6 +177,7 @@ select {
   display: block;
   height: 15.02890173%;
   width: 26.16487455%;
+  border: none;
   background-color: var(--red);
   text-decoration: none;
   padding: 4px var(--mobile-fs-body-info);
@@ -187,6 +189,7 @@ select {
 .remove {
   background-color: var(--red);
   text-decoration: none;
+  border: none;
   padding: 4px var(--mobile-fs-body-info);
   color: var(--white);
   text-align: center;
