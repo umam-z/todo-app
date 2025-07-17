@@ -1,0 +1,225 @@
+:root {
+  --purple: rgb(147, 51, 234);
+  --blue: rgb(59, 130, 246);
+  --gray: rgb(243, 244, 246);
+  --green: rgb(22, 163, 74);
+  --orange: rgb(234, 88, 12);
+  --red: rgb(185, 28, 28);
+  --white: rgb(255, 255, 255);
+
+  --desktop-fs-head: 1.5rem;
+  --mobile-fs-head: 1.25rem;
+  --desktop-fs-body-desc: 1rem;
+  --fs-body-info: 0.875rem;
+  --mobile-fs-body-info: 0.75rem;
+
+  --lh-body: 150%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: var(--mobile-fs-body-info);
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--desktop-fs-head);
+  /* height: 100vh; */
+}
+
+.card {
+  background-color: var(--white);
+  width: 87.2%;
+  max-width: 600px;
+  border: solid var(--black) 1px;
+  border-radius: var(--mobile-fs-head);
+  padding: var(--desktop-fs-head);
+  margin: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  font-size: var(--mobile-fs-head);
+  margin-top: 0;
+  margin-bottom: var(--desktop-fs-head);
+  font-weight: 800;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--desktop-fs-head);
+}
+
+.create-todo {
+  display: block;
+  height: 15.02890173%;
+  width: 26.16487455%;
+  background-color: var(--blue);
+  text-decoration: none;
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.done {
+  display: block;
+  height: 15.02890173%;
+  width: 26.16487455%;
+  background-color: var(--purple);
+  text-decoration: none;
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.todo-item,
+.todo-item-completed {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--mobile-fs-body-info) var(--desktop-fs-body-desc);
+  border-radius: var(--mobile-fs-body-info);
+  box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: var(--desktop-fs-head);
+}
+
+.todo-item-completed .title {
+  text-decoration: line-through;
+}
+.todo-item p {
+  margin: 0;
+}
+
+.info p:first-child {
+  margin-bottom: var(--mobile-fs-body-info);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: var(--mobile-fs-body-info);
+}
+
+.prioriy {
+  color: var(--green);
+}
+
+.due-at {
+  color: rgba(107, 114, 128, 1);
+}
+
+/* Create TODO Page */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--mobile-fs-body-info);
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+select {
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--blue);
+}
+
+.go-back {
+  height: 15.02890173%;
+  width: 26.16487455%;
+  text-decoration: none;
+  background-color: var(--red);
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.add-todo {
+  height: 15.02890173%;
+  width: 26.16487455%;
+  text-decoration: none;
+  background-color: var(--blue);
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.add {
+  max-width: 400px;
+}
+
+/* Done Page */
+
+.go-home {
+  display: block;
+  height: 15.02890173%;
+  width: 26.16487455%;
+  background-color: var(--green);
+  text-decoration: none;
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.delete-all {
+  display: block;
+  height: 15.02890173%;
+  width: 26.16487455%;
+  background-color: var(--red);
+  text-decoration: none;
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.remove {
+  background-color: var(--red);
+  text-decoration: none;
+  padding: 4px var(--mobile-fs-body-info);
+  color: var(--white);
+  text-align: center;
+  border-radius: 4px;
+}
+
+form > *:not(div:last-child) {
+  margin-bottom: var(--desktop-fs-head);
+}
+
+.card-title h1 {
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: var(--fs-body-info);
+  }
+  .content h1 {
+    font-size: var(--desktop-fs-head);
+  }
+  .description {
+    font-size: var(--desktop-fs-body-desc);
+  }
+}

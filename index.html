@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="card add">
+      <h1>Moh. Sirajul Umam</h1>
+      <p style="text-align: center">Web Developer</p>
+    </div>
+    <div class="card add">
+      <form id="todo-form">
+        <div class="card-title">
+          <h1>Create Todo</h1>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="due-at">Due At</label>
+            <input type="datetime-local" id="due-at" name="due-at" required />
+          </div>
+          <div class="form-group">
+            <label for="priority">Priority</label>
+            <select id="priority" name="priority">
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+              <option value="Low" selected>Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a class="go-back" href="./index.html">Back</a>
+          <!-- <a class="add-todo" href="#">Submit</a> -->
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="card">
+      <h1>TODOLIST</h1>
+      <div class="actions">
+        <a class="done" href="#completed-todo">Done</a>
+        <select name="priorities" id="priority-filter">
+          <option value="All">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div id="todo-list" class="todo-list">
+        <!-- <div class="todo-item">
+          <div class="info">
+            <p class="title">Title</p>
+            <p class="due-at">01:10 pm, 013/07/2025</p>
+          </div>
+          <div class="action">
+            <p class="prioriy">High</p>
+            <input type="checkbox" name="isDone" id="isDone" />
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="card">
+      <h1>COMPLETED TODOLIST</h1>
+      <div class="actions">
+        <button class="delete-all">Delete All</button>
+        <select name="priorities" id="completed-priority-filter">
+          <option value="All">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div id="completed-todo" class="todo-list">
+        <!-- <div class="todo-item">
+          <div class="info">
+            <p class="title">Title</p>
+            <p class="due-at">01:10 pm, 013/07/2025</p>
+          </div>
+          <div class="action">
+            <p class="prioriy">High</p>
+            <a class="remove" href="#">delete</a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
